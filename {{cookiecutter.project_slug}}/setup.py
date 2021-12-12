@@ -9,5 +9,5 @@ setup(
     author="{{cookiecutter.full_name}}",
     author_email="{{cookiecutter.email}}",
     license="{{cookiecutter.open_source_license}}",
-    python_requires=">=3.7",
+    python_requires=">=3.8",
 )

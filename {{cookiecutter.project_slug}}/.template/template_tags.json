@@ -8,6 +8,5 @@
   "version": "{{cookiecutter.version}}",
   "github_username": "{{cookiecutter.github_username}}",
   "email": "{{cookiecutter.email}}",
-  "port": "{{cookiecutter.port}}",
   "open_source_license": "{{cookiecutter.open_source_license}}"
 }
