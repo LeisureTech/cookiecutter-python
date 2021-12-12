@@ -26,7 +26,7 @@ You're all set!
 
 ### Step 3: Run your project
 ```bash
-cd {{cookiecutter.project_slug}}/app
+cd {{cookiecutter.project_slug}}/src
 docker build --tag python-project .
 docker run python-project
 ```

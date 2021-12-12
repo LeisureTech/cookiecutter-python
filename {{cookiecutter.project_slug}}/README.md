@@ -12,14 +12,32 @@
 
 ----
 ## Project Structure <a name="structure"></a>
-// TODO
-
+    ├── src  # source folder
+        ├── main.py  # python script
+        ├── Dockerfile
+        ├── pytest.ini
+        └── requirements.txt
+    ├── .template
+        ├── template_tags.json
+    ├── .github
+        ├── pytest.yml
+    ├── docs
+        ├── AUTHORS.md  
+    ├── .gitignore
+    ├── .pre-commit-config.yaml
+    ├── CHANGELOG.md
+    ├── docker-compose.yml
+    ├── LICENSE
+    ├── pyproject.toml
+    ├── README.md
+    ├── setup.cfg
+    └──setup.py
 ## Get Started <a name="getstarted"></a>
 
 Before you can run this project, you need to have python installed.
 You can use [pyenv](https://github.com/pyenv/pyenv) to create a virtual environment.
 
-### Step 1: Set up Python >= 3.7:
+### Step 1: Set up Python >= 3.8:
 Consider installing with [Homebrew](https://docs.brew.sh/):
 ```bash
 brew update
@@ -40,15 +58,12 @@ python -m pip freeze > requirements.txt
 python -m pip install -r requirements.txt
 ```
 
-To run pre-commit against all files
-```bash
-pre-commit run --all-files
-```
-
 ----
 ## Run the project <a name="run"></a>
-// TODO How to run your project
-
+```bash
+docker build --tag {{cookiecutter.project_slug}} .
+docker run {{cookiecutter.project_slug}}
+```
 ----
 
 ## Pre-commit <a name="pre-commit"></a>
@@ -58,10 +73,13 @@ Before you run hooks, you need to have pre-commit package manager installed.
 ```bash
 pip install pre-commit
 ```
-
+To run pre-commit against all files
+```bash
+pre-commit run --all-files
+```
 ---
 
-## Semantic Version Releases <a name="version"></a>
+## Version Release <a name="version"></a>
 ```bash
 pip install python-semantic-release # install the package
 
