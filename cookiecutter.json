@@ -1,8 +1,8 @@
 {
-    "package_name": "helloworld-project",
-    "project_slug": "helloworld_project",
-    "project_title": "Hello World Project",
-    "project_short_description": "A start-up hello world project",
+    "package_name": "example-project",
+    "project_slug": "example_project",
+    "project_title": "Example Project",
+    "project_short_description": "An example project",
     "app_name": "helloworld",
     "full_name": "Leisure Mojo",
     "version": "0.0.0",
