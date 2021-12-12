@@ -11,7 +11,7 @@ by executing one command.
 - Black Code style formatting
 - flake8 Linter.
 - Docker-compose & Dockerfile.
-- [Semantic version release](https://python-semantic-release.readthedocs.io/en/latest/) (automatic update CHANGELOG.md).
+- PyPackage release ([Semantic version release](https://python-semantic-release.readthedocs.io/en/latest/))
 - CircleCi CI/CD.
 - Extra support for Cookiecutter replay
 
