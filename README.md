@@ -74,7 +74,7 @@ replay_dir: "~/cookiecutter_python_example/.template" # set a relative/absolute 
 Run the following commands:
 
 ```bash
-cookiecutter --replay --config-file cookiecutter_python_example/.template/cookiecutter-config.yml -f gh:LeisureTech/cookiecutter-python
+cookiecutter --replay --config-file {{cookiecutter.project_slug}}/.template/cookiecutter-config.yml -f gh:LeisureTech/cookiecutter-python
 ```
 
 > -f = overwrite if exists
