@@ -3,3 +3,5 @@ dist
 hooks/__pycache__
 python_project_generator.egg-info
 .DS_Store
+.idea
+venv

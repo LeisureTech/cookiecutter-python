@@ -13,15 +13,14 @@ def context():
         "version": "0.0.0",
         "github_username": "test",
         "email": "test@test.com",
-        "port": 20000,
         "open_source_license": [
             "MIT license",
             "BSD license",
             "ISC license",
             "Apache Software License 2.0",
             "GNU General Public License v3",
-            "Not open source",
-        ],
+            "Not open source"
+        ]
     }
 
 
