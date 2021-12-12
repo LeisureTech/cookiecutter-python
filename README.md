@@ -81,4 +81,6 @@ Next, run the following command:
 cookiecutter --replay --config-file {{cookiecutter.project_slug}}/.template/cookiecutter-config.yml -f gh:LeisureTech/cookiecutter-python
 ```
 
-Keep in mind that -f stands for force - replay will overwrite existing files.
+### Caveats
+Keep in mind that `-f` indicates that the replay will overwrite existing files.
+Backup `CHANGELOG.md` and update `{{cookiecutter.version}}` from `.template/cookiecutter-python.json` to the current version of your project are recommended so that the replay will not mess up your git logs.
