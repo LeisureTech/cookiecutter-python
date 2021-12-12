@@ -3,17 +3,17 @@
 [![LeisureTech](https://circleci.com/gh/LeisureTech/cookiecutter-python.svg?style=svg)](<LINK>)
 
 A cookiecutter template that is aimed for all kinds of python project. It's
-straight-forward and easy to use. You can create a brand new python project 
+straight-forward and easy to use. You can create a brand new python project
 by executing one command.
 
 ## Features
 
 - Black Code style formatting
 - flake8 Linter.
-- Docker-compose for local development.
-- Semantic version release.
+- Docker-compose & Dockerfile.
+- [Semantic version release](https://python-semantic-release.readthedocs.io/en/latest/) (automatic update CHANGELOG.md).
 - CircleCi CI/CD.
-- Replay project
+- Extra support for Cookiecutter replay
 
 ----
 ## Python Project Structure :snake:
@@ -64,7 +64,9 @@ docker run python-project
 ```
 
 ## Project Replay :dizzy:
-Edit the `cookiecutter-config.yml` file from the `/.template` folder:
+Cookiecutter replay is tricky. To make it easier, we keep the replay file in the template so we don't need to worry about the project configuration is being overwritten. It comes in handy when generating multiple projects from the same template is required.
+
+To perform a replay, the first thing you need to do is to edit the `cookiecutter-config.yml` file from the `/.template` folder according to your situation:
 ```yml
 default_context:
     full_name: "Leisure Mojo"
@@ -73,10 +75,10 @@ default_context:
 cookiecutters_dir: "~/.cookiecutters/"
 replay_dir: "~/cookiecutter_python_example/.template" # set a relative/absolute path
 ```
-Run the following commands:
+Next, run the following commands:
 
 ```bash
 cookiecutter --replay --config-file {{cookiecutter.project_slug}}/.template/cookiecutter-config.yml -f gh:LeisureTech/cookiecutter-python
 ```
 
-> -f = overwrite if exists
+Keep in mind that -f means force - replay will overwrite existing files.
