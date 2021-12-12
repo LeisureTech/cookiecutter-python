@@ -1,0 +1,18 @@
+ {
+   "cookiecutter": {
+    "package_name": "{{cookiecutter.package_name}}",
+    "project_slug": "{{cookiecutter.project_slug}}",
+    "project_title": "{{cookiecutter.project_title}}",
+    "project_short_description": "{{cookiecutter.project_short_description}}",
+    "app_name": "{{cookiecutter.app_name}}",
+    "full_name": "{{cookiecutter.full_name}}",
+    "version": "{{cookiecutter.version}}",
+    "github_username": "{{cookiecutter.github_username}}",
+    "email": "{{cookiecutter.email}}",
+    "open_source_license": "{{cookiecutter.open_source_license}}",
+    "_copy_without_render": [
+      ".github/*"
+    ],
+    "_template": "gh:LeisureTech/cookiecutter-python"
+  }
+}

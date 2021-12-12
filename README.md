@@ -4,17 +4,17 @@ A cookiecutter template that is aimed for all kinds of python project. It's
 straight-forward and easy to use. You can create a brand new python project 
 by executing one command.
 
-In addition, many state-of-art technologies are adopted in this project, including
-but not limited to:
+## Features
+
 - Black Code style formatting
 - flake8 Linter.
 - Docker-compose for local development.
 - Semantic version release.
-- Gitlab/CircleCi CI/CD.
+- CircleCi CI/CD.
 
 ----
 ## Python Project Structure
-You can edit it of your own accord :sparkling_heart:
+It does not necessairly to follow this structure. Feel free to fork this project and create a project of your own accord :sparkling_heart:
 
     {{ cookiecutter.project_slug }}
     ├── src  # source folder
