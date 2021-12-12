@@ -4,6 +4,10 @@ Release notes to this project will be documented in this file.
 
 <!--next-version-placeholder-->
 
+## v0.0.4 (2021-12-12)
+### Fix
+* Rephrase readme ([`200941a`](https://github.com/LeisureTech/cookiecutter-python/commit/200941a2ab396becdae4b8f9fb8d01920e3f407e))
+
 ## v0.0.3 (2021-12-12)
 ### Fix
 * Add caveats in regards to project replay to README ([`cfe07e6`](https://github.com/LeisureTech/cookiecutter-python/commit/cfe07e63ed9cef3d99b2285ba593205619ef7bd0))
