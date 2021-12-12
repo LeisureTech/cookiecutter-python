@@ -1,32 +1,25 @@
 # Cookiecutter Python
 
-Cookiecutter Python is a framework that is used for Python Project. It adopts many state-of-art technologies including
+Cookiecutter Python is a framework that is aimed for all kinds of python project. It's very straight-forward and easy to use. You can create a brand new project by one command.
+
+In addition, many state-of-art technologies are adpoted including
 but not limited to:
-- Pre-commit for code style formatting by Black and Linter by flake8.
-- Building docker images and using docker containers for local development.
+- Black Code style formatting
+- flake8 Linter.
+- Docker-compose for local developement.
 - Semantic version release.
 - Automatic PyTest in CI/CD.
 
 ----
-## Get Started
+## Get Started :rocket:
 
-Generating your startup Sanic project is fairly simple. You are only a few
-commands away.
-But before you do that, you need to have `cookiecutter`installed.
+### Step 1: Install cookiecutter
+Please follow the [documentation](https://cookiecutter.readthedocs.io/en/1.7.2/installation.html) to install the package.
 
-For Homebrew, you can do:
+### Step 2: Create your new project
+Under your repository folder, please run
 ```bash
-brew install cookiecutter
+$cookiecutter https://github.com/LeisureTech/cookiecutter-python
 ```
-Alternative installations can be found here:
-https://cookiecutter.readthedocs.io/en/1.7.2/installation.html
 
-Now it's time to initialize your project, you just need to do.
-
-```bash
-# Create your repository
-mkdir /your-repository
-cookiecutter https://github.com/LeisureTech/cookiecutter-python
-```
-Following the steps and setting up a few template tags,
-you will get your project instantly!
+You're all set!
