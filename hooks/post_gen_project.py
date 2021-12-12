@@ -11,7 +11,6 @@ def remove_file(filepath):
 
 
 if __name__ == "__main__":
-
     if "Not open source" == "{{ cookiecutter.open_source_license }}":
         logger.info("Project {{cookiecutter.project_slug}} is not open source")
         remove_file("LICENSE")
