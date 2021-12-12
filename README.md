@@ -11,7 +11,7 @@ by executing one command.
 - Black Code style formatting
 - flake8 Linter.
 - Docker-compose & Dockerfile.
-- [Semantic version release](https://python-semantic-release.readthedocs.io/en/latest/) (automatic update CHANGELOG.md).
+- PyPackage release ([Semantic version release](https://python-semantic-release.readthedocs.io/en/latest/))
 - CircleCi CI/CD.
 - Extra support for Cookiecutter replay
 
@@ -64,7 +64,7 @@ docker run python-project
 ```
 
 ## Project Replay :dizzy:
-Cookiecutter replay is tricky. To make it easier, we keep the replay file in the template so we don't need to worry about the project configuration is being overwritten. It comes in handy when generating multiple projects from the same template is required.
+Cookiecutter replay is tricky. To make it easier, we keep the replay file in the template so we don't need to worry about the project configuration is being overwritten. It comes in handy when generating multiple projects from the template is required.
 
 To perform a replay, the first thing you need to do is to edit the `cookiecutter-config.yml` file from the `/.template` folder according to your situation:
 ```yml
@@ -75,10 +75,10 @@ default_context:
 cookiecutters_dir: "~/.cookiecutters/"
 replay_dir: "~/cookiecutter_python_example/.template" # set a relative/absolute path
 ```
-Next, run the following commands:
+Next, run the following command:
 
 ```bash
 cookiecutter --replay --config-file {{cookiecutter.project_slug}}/.template/cookiecutter-config.yml -f gh:LeisureTech/cookiecutter-python
 ```
 
-Keep in mind that -f means force - replay will overwrite existing files.
+Keep in mind that -f stands for force - replay will overwrite existing files.
