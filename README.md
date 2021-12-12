@@ -61,7 +61,7 @@ docker build --tag python-project .
 docker run python-project
 ```
 
-## Project Replay :revolving_hearts:
+## Project Replay :dizzy:
 Edit the `cookiecutter-config.yml` file from the `/.template` folder:
 ```yml
 default_context:
@@ -77,4 +77,4 @@ Run the following commands:
 cookiecutter --replay --config-file cookiecutter_python_example/.template/cookiecutter-config.yml -f gh:LeisureTech/cookiecutter-python
 ```
 
-> -f means overwrite if exists
+> -f = overwrite if exists
