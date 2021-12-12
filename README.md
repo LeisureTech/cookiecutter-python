@@ -1,19 +1,11 @@
-# Cookiecutter Python Sanic
+# Cookiecutter Python
 
-Cookiecutter python Sanic is a framework that is used for rapid development in
-microservice infrastructure. It adopts many state-of-art technologies including
+Cookiecutter Python is a framework that is used for Python Project. It adopts many state-of-art technologies including
 but not limited to:
 - Pre-commit for code style formatting by Black and Linter by flake8.
 - Building docker images and using docker containers for local development.
 - Semantic version release.
-- Alembic for db migration.
 - Automatic PyTest in CI/CD.
-
----
-### Why Sanic?
-
-Sanic is web server framework that supports HTTP 2.0 which supports asynchrous
-communication between services.
 
 ----
 ## Get Started
@@ -34,18 +26,7 @@ Now it's time to initialize your project, you just need to do.
 ```bash
 # Create your repository
 mkdir /your-repository
-cookiecutter https://github.com/LeisureTech/python-project-generator
+cookiecutter https://github.com/LeisureTech/cookiecutter-python
 ```
 Following the steps and setting up a few template tags,
 you will get your project instantly!
-
----
-## Versioning
-We suggest to use `python-semantic-release` to do semantic release.
-```bash
-pip install python-semantic-release
-```
-To release a new version,
-```bash
-semantic-release publish --minor/--patch/--major # bump version
-```
