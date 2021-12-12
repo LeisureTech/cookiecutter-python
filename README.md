@@ -1,5 +1,7 @@
 # Cookiecutter Python 
 
+[![LeisureTech](https://circleci.com/gh/LeisureTech/cookiecutter-python.svg?style=svg)](<LINK>)
+
 A cookiecutter template that is aimed for all kinds of python project. It's
 straight-forward and easy to use. You can create a brand new python project 
 by executing one command.
