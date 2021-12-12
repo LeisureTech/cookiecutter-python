@@ -64,7 +64,7 @@ docker run python-project
 ```
 
 ## Project Replay :dizzy:
-Cookiecutter replay is tricky. To make it easier, we keep the replay file in the template so we don't need to worry about the project configuration is being overwritten. It comes in handy when generating multiple projects from the template is required.
+Cookiecutter replay is tricky. To make it easier, we keep the replay file in the template so we don't need to worry about the default replay parameters have been overwritten. It comes in handy for the situation where multiple projects were generated from the same template.
 
 To perform a replay, the first thing you need to do is to edit the `cookiecutter-config.yml` file from the `/.template` folder according to your situation:
 ```yml
