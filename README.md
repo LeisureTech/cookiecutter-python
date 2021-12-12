@@ -8,7 +8,32 @@ but not limited to:
 - flake8 Linter.
 - Docker-compose for local developement.
 - Semantic version release.
-- Automatic PyTest in CI/CD.
+- Gitlab/CircleCi CI/CD.
+
+----
+## Structure
+    ├── src  # source folder
+        ├── main.py  # python script
+        ├── Dockerfile
+        ├── pytest.ini
+        └── requirements.txt
+    ├── .template
+        ├── template_tags.json
+    ├── .github
+        ├── pytest.yml
+    ├── .circleci
+        ├── config.yml
+    ├── docs
+        ├── AUTHORS.md  
+    ├── .gitignore
+    ├── .pre-commit-config.yaml
+    ├── CHANGELOG.md
+    ├── docker-compose.yml
+    ├── LICENSE
+    ├── pyproject.toml
+    ├── README.md
+    ├── setup.cfg
+    └── setup.py
 
 ----
 ## Get Started :rocket:

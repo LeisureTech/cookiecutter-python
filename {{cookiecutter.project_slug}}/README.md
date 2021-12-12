@@ -33,7 +33,7 @@
     ├── pyproject.toml
     ├── README.md
     ├── setup.cfg
-    └──setup.py
+    └── setup.py
 ## Get Started <a name="getstarted"></a>
 
 Before you can run this project, you need to have python installed.
