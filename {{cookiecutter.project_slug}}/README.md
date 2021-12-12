@@ -21,6 +21,8 @@
         ├── template_tags.json
     ├── .github
         ├── pytest.yml
+    ├── .circleci
+        ├── config.yml
     ├── docs
         ├── AUTHORS.md  
     ├── .gitignore
