@@ -1,4 +1,4 @@
-# Cookiecutter Python
+# Cookiecutter Python 
 
 A cookiecutter template that is aimed for all kinds of python project. It's
 straight-forward and easy to use. You can create a brand new python project 
@@ -11,9 +11,10 @@ by executing one command.
 - Docker-compose for local development.
 - Semantic version release.
 - CircleCi CI/CD.
+- Replay project
 
 ----
-## Python Project Structure
+## Python Project Structure :snake:
 It does not necessairly to follow this structure. Feel free to fork this project and create a project of your own accord :sparkling_heart:
 
     {{ cookiecutter.project_slug }}
@@ -22,10 +23,9 @@ It does not necessairly to follow this structure. Feel free to fork this project
         ├── Dockerfile
         ├── pytest.ini
         └── requirements.txt
-    ├── .template
-        ├── template_tags.json
-    ├── .github
-        ├── pytest.yml
+    ├── .template  # cookiecutter replay dir
+        ├── cookiecutter-python.json # cookiecutter-replay
+        └── cookiecutter-config.yml  # user config
     ├── .circleci
         ├── config.yml
     ├── docs
@@ -60,3 +60,21 @@ cd {{cookiecutter.project_slug}}/src
 docker build --tag python-project .
 docker run python-project
 ```
+
+## Project Replay :revolving_hearts:
+Edit the `cookiecutter-config.yml` file from the `/.template` folder:
+```yml
+default_context:
+    full_name: "Leisure Mojo"
+    email: "leisuremojotech@gmail.com"
+    github_username: "leisuremojo"
+cookiecutters_dir: "~/.cookiecutters/"
+replay_dir: "~/cookiecutter_python_example/.template" # set a relative/absolute path
+```
+Run the following commands:
+
+```bash
+cookiecutter --replay --config-file cookiecutter_python_example/.template/cookiecutter-config.yml -f gh:LeisureTech/cookiecutter-python
+```
+
+> -f means overwrite if exists
