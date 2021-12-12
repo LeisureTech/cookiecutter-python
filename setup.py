@@ -1,13 +1,13 @@
 from setuptools import setup
 
-__version__ = "0.2.2"
+__version__ = "0.0.0"
 
 setup(
-    name="python-project-generator",
+    name="cookiecutter-python",
     version=__version__,
-    description="A cookiecutter template for Sanic Framework",
-    author="Yifang Deng",
+    description="A cookiecutter template for python project",
+    author="yvedengw",
     author_email="yvedengw@gmail.com",
     license="MIT",
-    python_requires=">=3.7",
+    python_requires=">=3.8",
 )
