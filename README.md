@@ -82,5 +82,4 @@ cookiecutter --replay --config-file {{cookiecutter.project_slug}}/.template/cook
 ```
 
 ### Caveats
-Keep in mind that `-f` indicates that the replay will overwrite existing files.
-Backup `CHANGELOG.md` and update `{{cookiecutter.version}}` from `.template/cookiecutter-python.json` to the current version of your project are recommended so that the replay will not mess up your git logs.
+Before replaying, you better backup `CHANGELOG.md` and update the `{{cookiecutter.version}}` from `.template/cookiecutter-python.json` to the current version of your project. This is due to the fact that replaying overwirtes those files, so by this way your git logs will not be contaminated.
